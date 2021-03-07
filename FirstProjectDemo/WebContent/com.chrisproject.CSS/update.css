@@ -1,0 +1,19 @@
+@charset "UTF-8";
+* {
+    margin:0;
+    padding:0;
+}
+
+.udpatediv1{
+	border:1px solid gray;
+	margin-left:30px;
+	float:left;
+	margin-top:30px;
+	border: 1px solid black;
+	background-color: lightblue;
+	padding:8px;
+}
+.tablesubmit{
+	margin-left:36%;
+}
+
