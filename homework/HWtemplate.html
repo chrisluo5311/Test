@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript HomeWork</title>
+    <link href="/homework/css/template.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="/homework/js/loadwords.js"></script>
+    <script type="text/javascript" src="/homework/js/hw3.js"></script>
+    <script type="text/javascript" src="/homework/js/sidebar.js"></script>
+    <script type="text/javascript" src="/homework/js/hw2.js"></script>
+    <script type="text/javascript" src="/homework/js/date.js"></script>
+    <link href="/homework/css/picslide.css" rel="stylesheet" >
+    
+    
+</head>
+<body>
+    
+    <div class="sidenav">
+        <div class=sidediv></div>
+        <div class=sidediv>
+        <a href=""><h3 class="nav" id="a1">First HomeWork</h3></a>
+        <a href=""><h3 class="nav" id="a2">Second HomeWork</h3></a>
+        <a href=""><h3 class="nav" id="a3">Third HomeWork</h3></a>
+        <a href=""><h3 class="nav" id="a4">Forth HomeWork</h3></a>
+        <a href=""><h3 class="nav" id="a5">Fifth HomeWork</h3></a>
+        </div>
+        <div class=sidediv></div>
+    </div>
+
+    <div class="header">
+        <div class="text">Chris's HomeWork</div>
+    </div>
+    <div class="row">
+        <div class="bg">
+            <!-- write here -->
+            
+            <script>
+                document.write(`<table  class="hw1container">`);  
+                document.write(`<th class="th1" colspan="9">99乘法表</th>`);
+                for (let i =1;i<10;i++){
+                    document.write(`<br>`);
+                    document.write(`<tr class="tr1">`);
+                    for (let j=1;j<10;j++){
+                    document.write(`<td class="tr1">${i}*${j}=${i*j}</td>`);
+                 }
+                 document.write(`</tr>`);
+                 
+                }
+                document.write(`</table>`);
+            </script>
+
+            <fieldset class="hoverf" id="hw2container">
+                <legend>Form check</legend>
+                <div class="st1">
+                    <label class="t1" for="account1">姓名:</label>
+                    <input type="text" id="account1" name="account" autocomplete="off" >
+                    <span id="idsp"></span><br/>
+                    <p>(1.不可空白，2.至少兩個字以上，3.必須全部為中文字)</p>
+                    <!-- <button onclick="checkname()">send</button> -->
+                </div>
+                <div class="st1">
+                    <label class="t1" for="pwd1">密碼:</label>
+                    <input type="password" id="pwd1" name="pwd" >
+                    <span id="idsp2"></span><br/>
+                    <p>(1.不可空白，2.至少6個字且必須包含英文、數字、特殊字元(#^@$!%*?&)</p>
+                </div>
+                <div class="st1">
+                    <label class="t1" for="account1">日期:</label>
+                    <input type="text" id="date1" name="datt"autocomplete="off" >
+                    <span id="idsp3" ></span><br/>
+                    <p>格式:西元年/月/日 yyyy/MM/dd</p>
+                </div>
+                </fieldset>
+
+            <div id="hw3container" style="display: none;" name="hwcontainer">
+                <h2 style="text-align: center;">星星評分</h2>
+                <div class="hw3"> 
+                    <img id="g1" src="Images/star.gif" />
+                    <img id="g2" src="Images/star.gif" />
+                    <img id="g3" src="Images/star.gif" />
+                    <img id="g4" src="Images/star.gif" />
+                    <img id="g5" src="Images/star.gif" />
+                </div>
+                <div id= "wait">Please Rate</div>
+                <div>
+                <span id ="score">Score: 0</span>
+                </div>
+            </div>
+
+            <div id="hw4container">
+            <div  class="hw4">
+                <div class="piCard fade">
+                    <div class="cardTxt">1/5</div>
+                    <img src="Images/slide1.png" alt="1" style="width:100%;">
+                    <div class="btmTxt">slide1</div>
+                </div>
+                <div class="piCard fade">
+                    <div class="cardTxt">2/5</div>
+                    <img src="Images/slide2.jpg" alt="2" style="width:100%">
+                    <div class="btmTxt">slide2</div>
+                </div>
+                <div class="piCard fade">
+                    <div class="cardTxt">3/5</div>
+                    <img src="Images/slide3.png"alt="3" style="width:100%">
+                    <div class="btmTxt">slide3</div>
+                </div>
+                <div class="piCard fade">
+                    <div class="cardTxt">4/5</div>
+                    <img src="Images/slide4.png"alt="4" style="width:100%">
+                    <div class="btmTxt">slid4</div>
+                </div>
+                <div class="piCard fade">
+                    <div class="cardTxt">5/5</div>
+                    <img src="Images/slide5.png"alt="5" style="width:100%">
+                    <div class="btmTxt">slide5</div>
+                </div>
+        
+                <div class="nextright"  style="height:40px;"><i class="fas fa-chevron-right"style="position:relative;top:30%"></i></div>
+                <div class="nextleft" style="height:40px;"><i class="fas fa-chevron-left"style="position:relative;top:30%" ></i></div>
+            </div>
+        
+            <div class="dotdiv" style="text-align:center">
+                <span class="dot" id="d1"></span> 
+                <span class="dot" id="d2"></span> 
+                <span class="dot" id="d3"></span> 
+                <span class="dot" id="d4"></span> 
+                <span class="dot" id="d5"></span> 
+            </div>
+            <script type="text/javascript" src="/homework/js/picSlide.js"></script>
+            </div>
+
+            <div id="hw5container">
+                <div id="datecontainer"><h3>Date</h3>
+                    <select id="idSelectYear"></select>
+                    <select id="idSelectMonth"></select>
+                    <select id="idSelectDate"></select>
+                    <p id="idwords2"></p>
+                </div>
+            </div>
+    
+            <div class="middle">
+                <div class="leftdoor"><span id="txt1" class="doorText"></span></div>
+                <div class="rightdoor"><span id="txt2" class="doorText"></span></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

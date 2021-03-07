@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hw4{
+    max-width: 600px;
+    position: relative;
+    top: 10px;
+    margin:0 auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px#BEBEBE;
+    border-style: outset;
+}
+.nextleft{
+  position:absolute;
+  top:50%;
+  left: 3px;
+  width: auto;
+  margin-top: -20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  padding:5px;
+  color: white;
+}
+.nextright{
+  position:absolute;
+  top:50%;
+  right:3px;
+  width: auto;
+  margin-top: -20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  padding:5px;
+  color: white;
+}
+.nextleft:hover,.nextright:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+.piCard{
+  height: 300px;
+  display: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border-style: outset;
+}
+img {vertical-align: middle;}
+.cardTxt{
+    font-size: 16px;
+    color: white;
+    position:absolute;
+    top:0px;
+}
+.btmTxt{
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    
+    position: absolute;
+    bottom: 0px;
+}
+.dotdiv{
+  margin-top: 20px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition:background-color 0.6s ease;
+  }
+.active {
+    background-color: #717171;
+  }
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+@keyframes fade{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
